@@ -66,8 +66,9 @@ def scrape_mercadolibre(url):
     return df
 
 # Ejecutar
-url = "https://listado.mercadolibre.com.mx/celulares?sb=all_mercadolibre#D[A:celulares]"
+#url = "https://listado.mercadolibre.com.mx/celulares?sb=all_mercadolibre#D[A:celulares]"
+url = "https://listado.mercadolibre.com.mx/celulares-telefonia/celulares-smartphones/celulares_Desde_51_NoIndex_True?sb=all_mercadolibre"
 df = scrape_mercadolibre(url)
 print(df.head())
-df.to_csv("mercado_libre.csv", index=False)
+df.to_csv("mercado_libre_pag2.csv", index=False)
 
